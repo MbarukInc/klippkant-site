@@ -1,0 +1,4 @@
+baseURL = "https://klippkant-site.pages.dev/"
+languageCode = "en-us"
+title = "Klippkant Ltd"
+theme = "ananke"
