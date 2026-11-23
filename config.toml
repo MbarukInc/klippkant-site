@@ -1,4 +1,9 @@
-baseURL = "https://klippkant-site.pages.dev/"
+baseURL = "https://klippkant.net/"
 languageCode = "en-us"
 title = "Klippkant Ltd"
 theme = "ananke"
+
+[params]
+  description = "Klippkant Ltd. A new site is on its way."
+  tagline = "At the edge of something new."
+  ogImage = "images/og-image.jpg"
