@@ -4,6 +4,8 @@ title = "Klippkant Ltd"
 theme = "ananke"
 
 [params]
-  description = "Klippkant Ltd. A new site is on its way."
-  tagline = "At the edge of something new."
+  description = "Klippkant Ltd is an independent cloud and infrastructure consultancy. Full site coming soon."
+  eyebrow = "Consulting"
+  tagline = "Independent cloud and infrastructure engineering."
+  meaning = "Klippkant: Swedish, loosely \"cliff edge\"."
   ogImage = "images/og-image.jpg"
