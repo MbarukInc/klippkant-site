@@ -1,0 +1,111 @@
+:root {
+  --bg: #17181b;
+  --fg: #f2f3f5;
+  --muted: #a9adb5;
+  --accent: #d7dae0;
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { background: var(--bg); }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  color: var(--fg);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+  background:
+    linear-gradient(90deg, rgba(23, 24, 27, 0.88) 0%, rgba(23, 24, 27, 0.55) 45%, rgba(23, 24, 27, 0.1) 100%),
+    var(--bg) url("/images/cliff-edge.webp") no-repeat right bottom / cover;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem clamp(1.5rem, 8vw, 7rem);
+  max-width: 60rem;
+}
+
+.eyebrow {
+  margin: 0 0 1rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.75rem, 9vw, 6rem);
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  line-height: 1.05;
+}
+
+.tagline {
+  margin: 1.5rem 0 0;
+  max-width: 28rem;
+  font-size: clamp(1.05rem, 2.4vw, 1.3rem);
+  color: var(--accent);
+}
+
+.contact {
+  margin: 2rem 0 0;
+  font-size: 1rem;
+}
+.contact a {
+  color: var(--fg);
+  text-decoration: none;
+  border-bottom: 1px solid var(--muted);
+  padding-bottom: 0.15rem;
+}
+.contact a:hover { border-bottom-color: var(--fg); }
+
+.status {
+  margin: 2.5rem 0 0;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.status::before {
+  content: "";
+  width: 2.5rem;
+  border-top: 1px solid var(--muted);
+}
+
+footer {
+  padding: 1.25rem clamp(1.5rem, 8vw, 7rem);
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+a { color: inherit; }
+a:focus-visible { outline: 2px solid var(--fg); outline-offset: 3px; }
+
+@media (max-width: 40rem) {
+  body {
+    background:
+      linear-gradient(180deg, rgba(23, 24, 27, 0.85) 0%, rgba(23, 24, 27, 0.35) 60%, rgba(23, 24, 27, 0.1) 100%),
+      var(--bg) url("/images/cliff-edge.webp") no-repeat 70% bottom / cover;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  main > * { animation: rise 0.9s ease-out both; }
+  main > :nth-child(2) { animation-delay: 0.12s; }
+  main > :nth-child(3) { animation-delay: 0.24s; }
+  main > :nth-child(4) { animation-delay: 0.36s; }
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(0.6rem); }
+    to { opacity: 1; transform: none; }
+  }
+}

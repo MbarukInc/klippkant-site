@@ -1,4 +1,11 @@
-baseURL = "https://klippkant-site.pages.dev/"
+baseURL = "https://klippkant.net/"
 languageCode = "en-us"
 title = "Klippkant Ltd"
 theme = "ananke"
+
+[params]
+  description = "Klippkant Ltd is an independent cloud and infrastructure consultancy."
+  eyebrow = "Consulting"
+  tagline = "Independent cloud and infrastructure engineering."
+  email = "info@klippkant.net"
+  ogImage = "images/og-image.jpg"
