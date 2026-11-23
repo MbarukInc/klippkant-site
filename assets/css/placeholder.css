@@ -56,6 +56,18 @@ h1 {
   color: var(--accent);
 }
 
+.contact {
+  margin: 2rem 0 0;
+  font-size: 1rem;
+}
+.contact a {
+  color: var(--fg);
+  text-decoration: none;
+  border-bottom: 1px solid var(--muted);
+  padding-bottom: 0.15rem;
+}
+.contact a:hover { border-bottom-color: var(--fg); }
+
 .status {
   margin: 2.5rem 0 0;
   display: flex;
